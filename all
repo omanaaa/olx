@@ -5,28 +5,32 @@ b. Execution
 c. Debugging
 Code:
 #include<reg52.H>
+
 sbit LED = P2^0;
+
 void Delay(void);
+
 void main(void)
 {
-while(1)
-{
-LED = 0;
-Delay();
-LED = 1;
-Delay();
+	while(1)
+	{
+		LED = 0;
+		Delay();
+		LED = 1;
+		Delay();
+	}
 }
-}
+
 void Delay(void)
 {
-int j;
-int i;
-for(i = 0; i < 10; i++)
-{
-for(j = 0; j < 10000; j++)
-{
-}
-}
+	int j;
+	int i;
+	for(i = 0; i < 10; i++)
+	{
+		for(j = 0; j < 10000; j++)
+		{
+		}
+	}
 }
 
 2. A Configure timer control registers of 8051 and develop a program to generate given time delay. 
